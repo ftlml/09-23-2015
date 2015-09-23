@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt # Plotting Library
 import matplotlib.cm as cm # Color Maps
 
 # Load the dataset
-input = gzip.open('Data/mnist.pkl.gz', 'rb')
+input = gzip.open('mnist.pkl.gz', 'rb')
 train_set, valid_set, test_set = cPickle.load(input)
 input.close()
 # Expand the training set to inputs and target lebels
